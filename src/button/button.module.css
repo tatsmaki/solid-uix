@@ -5,7 +5,7 @@
   width: 100%;
   min-width: 164px;
 
-  background: #ec5990;
+  background: var(--colors-accent-500);
   border-radius: 6px;
   padding: 0 10px;
   transition: background 0.3s;
@@ -16,15 +16,15 @@
   line-height: 22px;
   letter-spacing: 0%;
   text-align: center;
-  color: white;
+  color: var(--colors-black-100);
   cursor: pointer;
 }
 
 .button:disabled {
-  background: #494a56;
+  background: var(--colors-black-700);
   pointer-events: none;
 }
 
 .button:focus-visible {
-  outline: 1px solid white;
+  outline: 1px solid var(--colors-black-100);
 }

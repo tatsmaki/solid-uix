@@ -1,4 +1,5 @@
 import type { Preview } from "@kachurun/storybook-solid-vite";
+import "../../src/main.css";
 
 export const tags = ["autodocs"];
 
