@@ -3,11 +3,12 @@
   box-sizing: border-box;
   border: none;
   width: 100%;
+  min-width: 164px;
 
   background: #ec5990;
   border-radius: 6px;
   padding: 0 10px;
-  transition: all 0.3s;
+  transition: background 0.3s;
 
   font-family: Inter;
   font-weight: 500;
@@ -16,8 +17,14 @@
   letter-spacing: 0%;
   text-align: center;
   color: white;
+  cursor: pointer;
 }
 
-.button:focus {
+.button:disabled {
+  background: #494a56;
+  pointer-events: none;
+}
+
+.button:focus-visible {
   outline: 1px solid white;
 }
