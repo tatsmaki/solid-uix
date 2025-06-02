@@ -1,0 +1,42 @@
+{
+  "name": "@kachurun/storybook-solid-template",
+  "version": "9.0.6",
+  "author": "kachurun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kachurun/create-solid-storybook/issues"
+  },
+  "homepage": "https://github.com/kachurun/create-solid-storybook#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kachurun/create-solid-storybook.git",
+    "directory": "packages/storybook-solid-template"
+  },
+  "scripts": {
+    "build": "storybook build",
+    "start": "storybook dev -p 6006"
+  },
+  "devDependencies": {
+    "@kachurun/storybook-solid-vite": "^9.0.6",
+    "@storybook/addon-a11y": "^9.0.0",
+    "@storybook/addon-docs": "^9.0.0",
+    "@storybook/addon-links": "^9.0.0",
+    "@storybook/addon-vitest": "^9.0.0",
+    "@storybook/builder-vite": "^9.0.0",
+    "@tsconfig/strictest": "^2.0.0",
+    "solid-js": "^1.9.7",
+    "storybook": "^9.0.0",
+    "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    ".storybook/**",
+    "stories/**",
+    "types/**",
+    "package.json",
+    "tsconfig.json",
+    "README.md"
+  ]
+}

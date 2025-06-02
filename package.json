@@ -19,6 +19,9 @@
     "dist",
     "README.md"
   ],
+  "workspaces": [
+    "src-storybook"
+  ],
   "peerDependencies": {
     "solid-js": "^1.9.5"
   },
@@ -34,7 +37,8 @@
   },
   "scripts": {
     "build": "tsc && vite build",
-    "test": "vitest run"
+    "test": "vitest run",
+    "start": "cd src-storybook && npm start"
   },
   "author": "thorn_pear",
   "license": "ISC",
