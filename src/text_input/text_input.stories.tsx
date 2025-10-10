@@ -46,6 +46,16 @@ export const Error = {
     placeholder: "Placeholder",
     value: "",
     disabled: false,
+    error: true,
+  },
+};
+
+export const ErrorMessage = {
+  args: {
+    label: "TextInput",
+    placeholder: "Placeholder",
+    value: "",
+    disabled: false,
     error: "Error",
   },
 };

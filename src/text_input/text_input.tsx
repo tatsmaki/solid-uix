@@ -2,7 +2,8 @@ import { createUniqueId, splitProps } from "solid-js";
 import { TextInputProps } from "./text_input.types";
 import sx from "./text_input.module.css";
 import { Label } from "../label/label";
-import { cls } from "../cls";
+import { cls } from "../utils/cls";
+import { isString } from "../utils/string";
 
 export const TextInput = (props: TextInputProps) => {
   const id = createUniqueId();
@@ -18,7 +19,7 @@ export const TextInput = (props: TextInputProps) => {
         data-error={!!local.error}
         class={cls(sx.input, local.class)}
       />
-      {!!local.error && <p class={sx.error}>{local.error}</p>}
+      {isString(local.error) && !!local.error && <p class={sx.error}>{local.error}</p>}
     </span>
   );
 };
