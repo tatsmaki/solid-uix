@@ -3,7 +3,7 @@ import { fn } from "storybook/test";
 import { Label } from "./label";
 
 export default {
-  title: "Example/Label",
+  title: "Static/Label",
   component: Label,
   parameters: {
     layout: "centered",

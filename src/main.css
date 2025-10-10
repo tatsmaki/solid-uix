@@ -22,10 +22,10 @@
   --colors-accent-800: #061494;
   --colors-accent-900: #010a5f; */
 
-  /* --colors-error-450: #ff6645;
-  --colors-error-550: #ec441f; */
+  --colors-error-450: #ff6645;
+  --colors-error-550: #ec441f;
 
-  /* color-scheme: light dark; */
+  color-scheme: light dark;
   color: var(--colors-black-100);
   background-color: var(--colors-black-900);
 
