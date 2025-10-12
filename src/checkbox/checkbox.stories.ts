@@ -13,27 +13,23 @@ export default {
   args: {
     label: "Checkbox",
     disabled: false,
-    error: "",
+    error: false,
     onChange: fn(),
   },
 };
 
 export const Default = {
-  args: {
-    label: "Checkbox",
-  },
+  args: {},
 };
 
 export const Disabled = {
   args: {
-    label: "Checkbox",
     disabled: true,
   },
 };
 
 export const Error = {
   args: {
-    label: "Checkbox",
     error: true,
   },
 };

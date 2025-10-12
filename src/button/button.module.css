@@ -16,15 +16,21 @@
   line-height: 22px;
   letter-spacing: 0%;
   text-align: center;
-  color: var(--colors-black-100);
+  color: var(--colors-black-900);
   cursor: pointer;
+}
+
+.button:hover {
+  background: var(--colors-accent-400);
 }
 
 .button:disabled {
   background: var(--colors-black-700);
-  pointer-events: none;
+  color: var(--colors-black-400);
+  cursor: not-allowed;
 }
 
 .button:focus-visible {
-  outline: 1px solid var(--colors-black-100);
+  outline: solid 2px var(--colors-accent-500);
+  outline-offset: 2px;
 }

@@ -12,6 +12,7 @@
   height: 100%;
   width: 100%;
   cursor: pointer;
+  outline: none;
 }
 
 .indicator {
@@ -28,6 +29,11 @@
   border-color: var(--colors-accent-500);
 }
 
+.input:focus-visible + .indicator {
+  outline: solid 2px var(--colors-accent-500);
+  outline-offset: 2px;
+}
+
 .label {
   font-family: Inter;
   font-weight: 400;
@@ -37,7 +43,7 @@
   color: var(--colors-black-100);
 }
 
-.checkbox[data-disabled="true"] {
+.checkbox.disabled {
   opacity: 0.5;
 }
 
@@ -45,10 +51,10 @@
   cursor: not-allowed;
 }
 
-.input[data-error="true"] + .indicator {
+.input[aria-invalid="true"] + .indicator {
   border-color: var(--colors-error-500);
 }
 
-.input[data-error="true"]:checked + .indicator {
+.input[aria-invalid="true"]:checked + .indicator {
   background: var(--colors-error-500);
 }

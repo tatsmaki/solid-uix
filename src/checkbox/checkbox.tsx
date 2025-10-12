@@ -8,9 +8,10 @@ export const Checkbox = (props: CheckboxProps) => {
   const id = createUniqueId();
 
   return (
-    <span class={cls(sx.checkbox, local.class)} data-disabled={!!rest.disabled}>
-      <input id={id} type="checkbox" class={sx.input} {...rest} data-error={!!local.error} />
+    <span class={cls(sx.checkbox, local.class, rest.disabled && sx.disabled)}>
+      <input {...rest} id={id} type="checkbox" class={sx.input} aria-invalid={!!local.error} />
       <span class={sx.indicator} />
+
       {local.label && (
         <label for={id} class={sx.label}>
           {local.label}
