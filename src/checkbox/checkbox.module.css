@@ -46,9 +46,9 @@
 }
 
 .input[data-error="true"] + .indicator {
-  border-color: var(--colors-error-550);
+  border-color: var(--colors-error-500);
 }
 
 .input[data-error="true"]:checked + .indicator {
-  background: var(--colors-error-550);
+  background: var(--colors-error-500);
 }
