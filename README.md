@@ -10,7 +10,13 @@
 npm install solid-uix
 ```
 
+### Default font
+
+Solid UIX uses the Inter font by default. See [Setup — Fonts](/docs/setup_fonts.md) for complete details.
+
 ### Quick start
+
+Import components and styles.
 
 ```js
 import { Button, TextInput, Checkbox, Field } from "solid-uix";
