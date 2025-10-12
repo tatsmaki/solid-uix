@@ -1,6 +1,6 @@
 :root {
   --colors-black-100: #efeff4;
-  --colors-black-100-transparent: #efeff410;
+  /* --colors-black-100-transparent: #efeff410; */
   --colors-black-150: #d9d9df;
   --colors-black-200: #c1c2cb;
   --colors-black-300: #acadb6;
@@ -11,6 +11,8 @@
   --colors-black-800: #22232a;
   --colors-black-850: #17181e;
   --colors-black-900: #0a0b11;
+
+  --colors-white-50-transparent: #ffffff0d;
 
   /* --colors-accent-100: #d7ecff;
   --colors-accent-200: #afd9ff;

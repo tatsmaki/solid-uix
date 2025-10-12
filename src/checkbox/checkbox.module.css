@@ -1,0 +1,54 @@
+.checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.input {
+  position: absolute;
+  margin: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.indicator {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid var(--colors-black-400);
+  border-radius: 50%;
+}
+
+.input:checked + .indicator {
+  content: url("./check.svg");
+  background: var(--colors-accent-500);
+  border-color: var(--colors-accent-500);
+}
+
+.label {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  color: var(--colors-black-100);
+}
+
+.checkbox[data-disabled="true"] {
+  opacity: 0.5;
+}
+
+.input:disabled {
+  cursor: not-allowed;
+}
+
+.input[data-error="true"] + .indicator {
+  border-color: var(--colors-error-550);
+}
+
+.input[data-error="true"]:checked + .indicator {
+  background: var(--colors-error-550);
+}
