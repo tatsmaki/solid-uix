@@ -13,7 +13,6 @@ export const TextInput = (props: TextInputProps) => {
       {...rest}
       class={cls(sx.input, local.class)}
       id={context.fieldId}
-      type="text"
       aria-describedby={context.ariaDescribedBy()}
       aria-invalid={context.error() || !!local.error}
       aria-errormessage={context.ariaErrorMessage()}
