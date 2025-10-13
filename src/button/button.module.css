@@ -4,11 +4,9 @@
   border: none;
   width: 100%;
   min-width: 164px;
-
-  background: var(--colors-accent-500);
   border-radius: 6px;
   padding: 0 10px;
-  transition: background 0.3s;
+  cursor: pointer;
 
   font-family: Inter;
   font-weight: 500;
@@ -16,21 +14,45 @@
   line-height: 22px;
   letter-spacing: 0%;
   text-align: center;
-  color: var(--colors-black-900);
-  cursor: pointer;
-}
-
-.button:hover {
-  background: var(--colors-accent-400);
 }
 
 .button:disabled {
-  background: var(--colors-black-700);
-  color: var(--colors-black-400);
   cursor: not-allowed;
 }
 
 .button:focus-visible {
   outline: solid 2px var(--colors-accent-500);
   outline-offset: 2px;
+}
+
+/* Solid */
+.button:global(.solid) {
+  background: var(--colors-accent-500);
+  color: var(--colors-black-900);
+}
+
+.button:global(.solid):hover {
+  background: var(--colors-accent-400);
+}
+
+.button:global(.solid):disabled {
+  background: var(--colors-black-700);
+  color: var(--colors-black-400);
+}
+
+/* Outlined */
+.button:global(.outlined) {
+  background: none;
+  border: 1.5px var(--colors-black-100) solid;
+  color: var(--colors-black-100);
+}
+
+.button:global(.outlined):hover {
+  border-color: var(--colors-black-300);
+  color: var(--colors-black-300);
+}
+
+.button:global(.outlined):disabled {
+  border-color: var(--colors-black-500);
+  color: var(--colors-black-500);
 }
