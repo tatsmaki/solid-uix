@@ -14,7 +14,7 @@ type StoryArg = {
 };
 
 export default {
-  title: "Data Display/Dialog",
+  title: "Feedback/Dialog",
   component: (arg: StoryArg) => {
     const [_, updateArgs] = useArgs();
 
