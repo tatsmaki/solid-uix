@@ -18,9 +18,9 @@ Solid UIX uses the Inter font by default. See [Setup — Fonts](/docs/setup_font
 
 Import components and styles.
 
-```js
+```jsx
 import { Button, TextInput, Checkbox, Field } from "solid-uix";
-import "solid-uix/dist/main.css";
+import "solid-uix/css";
 
 const Example = () => {
   return (
@@ -35,4 +35,24 @@ const Example = () => {
     </form>
   );
 };
+```
+
+### Server Side Rendering
+
+Import components from `solid-uix/ssr`
+
+```js
+import { Button, TextInput, Checkbox, Field } from "solid-uix/ssr";
+```
+
+Resolve styles as URL and append metadata element to document head.
+Stylesheet will be preloaded.
+See [@solidjs/meta Link](https://docs.solidjs.com/solid-meta/reference/meta/link)
+
+```jsx
+import styles from "solid-uix/css?url";
+
+<head>
+  <link rel="stylesheet" href={style} />
+</head>;
 ```
