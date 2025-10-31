@@ -12,7 +12,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
 }
 
@@ -26,33 +26,39 @@
 }
 
 /* Solid */
-.button:global(.solid) {
+.solid {
   background: var(--colors-accent-500);
   color: var(--colors-black-900);
 }
 
-.button:global(.solid):hover {
+.solid:hover {
   background: var(--colors-accent-400);
 }
 
-.button:global(.solid):disabled {
+.solid:disabled {
   background: var(--colors-black-700);
   color: var(--colors-black-400);
 }
 
 /* Outlined */
-.button:global(.outlined) {
+.outlined {
   background: none;
   border: 1.5px var(--colors-black-100) solid;
   color: var(--colors-black-100);
 }
 
-.button:global(.outlined):hover {
+.outlined:hover {
   border-color: var(--colors-black-300);
   color: var(--colors-black-300);
 }
 
-.button:global(.outlined):disabled {
+.outlined:disabled {
   border-color: var(--colors-black-500);
   color: var(--colors-black-500);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }

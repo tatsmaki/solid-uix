@@ -9,7 +9,7 @@ type StoryArg = {
 };
 
 export default {
-  title: "Form/Field",
+  title: "Feedback/Field",
   component: Field,
   parameters: {
     layout: "centered",

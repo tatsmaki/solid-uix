@@ -16,8 +16,8 @@ export type FieldMessageProps = JSX.HTMLAttributes<HTMLParagraphElement> & {
 };
 
 export type FieldContextValue = {
+  fieldId?: string;
   error: Accessor<boolean>;
-  fieldId: string;
   ariaDescribedBy: Accessor<string | undefined>;
   ariaErrorMessage: Accessor<string | undefined>;
   setMessage(message: Message): void;

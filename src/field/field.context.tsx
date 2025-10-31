@@ -4,7 +4,7 @@ import { getMessageIds, isError, Message } from "../utils/message";
 import { noop, noopAccessor } from "../utils/noop";
 
 const defaultValue: FieldContextValue = {
-  fieldId: "",
+  fieldId: undefined,
   error: noopAccessor(false),
   ariaDescribedBy: noopAccessor(undefined),
   ariaErrorMessage: noopAccessor(undefined),

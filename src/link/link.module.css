@@ -1,0 +1,29 @@
+.link {
+  color: var(--colors-accent-500);
+  text-decoration: none;
+  cursor: pointer;
+
+  font-family: Inter;
+  text-align: center;
+}
+
+.link:hover {
+  text-decoration-line: underline;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.secondary {
+  color: var(--colors-black-100);
+}
+
+.disabled {
+  color: var(--colors-black-400);
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  text-decoration-line: none;
+}
