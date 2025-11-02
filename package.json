@@ -1,6 +1,6 @@
 {
   "name": "solid-uix",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "type": "module",
   "main": "dist/main.js",
   "module": "./dist/main.js",
@@ -11,8 +11,8 @@
       "solid": "./dist/main.jsx",
       "default": "./dist/main.js"
     },
-    "./css": {
-      "import": "./dist/main.css"
+    "./dist/main.css": {
+      "default": "./dist/main.css"
     }
   },
   "files": [
