@@ -4,4 +4,5 @@ export type LinkProps = JSX.AnchorHTMLAttributes<HTMLAnchorElement> & {
   disabled?: boolean;
   color?: "accent" | "secondary";
   underline?: "hover" | "always";
+  reset?: boolean;
 };

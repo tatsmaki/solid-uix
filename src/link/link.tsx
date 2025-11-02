@@ -4,13 +4,13 @@ import sx from "./link.module.css";
 import { splitProps } from "solid-js";
 
 export const Link = (props: LinkProps) => {
-  const [local, rest] = splitProps(props, ["class", "disabled", "color", "underline"]);
+  const [local, rest] = splitProps(props, ["class", "reset", "disabled", "color", "underline"]);
 
   return (
     <a
       {...rest}
       class={cls(
-        sx.link,
+        !local.reset && sx.link,
         local.class,
         local.disabled && sx.disabled,
         local.color === "secondary" && sx.secondary,

@@ -39,15 +39,9 @@ const Example = () => {
 
 ### Server Side Rendering
 
-Import components from `solid-uix/ssr`
-
-```js
-import { Button, TextInput, Checkbox, Field } from "solid-uix/ssr";
-```
-
 Resolve styles as URL and append metadata element to document head.
 Stylesheet will be preloaded.
-See [@solidjs/meta Link](https://docs.solidjs.com/solid-meta/reference/meta/link)
+See @solidjs/meta [Link](https://docs.solidjs.com/solid-meta/reference/meta/link)
 
 ```jsx
 import styles from "solid-uix/css?url";

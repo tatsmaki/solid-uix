@@ -1,6 +1,8 @@
 import { fn } from "storybook/test";
 
 import { Link } from "./link";
+// import { buttonSx } from "../button/button";
+// import { cls } from "../utils/cls";
 
 export default {
   title: "Interactive/Link",
